@@ -1,0 +1,105 @@
+/* Estilos generales para el body */
+body {
+    background-color: black;
+    color: #ff0000; /* Texto color vino */
+    text-align: center; /* Centra todo el contenido del body */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+    font-family: 'Cormorant Garamond', serif; /* Fuente legible y elegante */
+    font-size: medium;
+}
+p {
+    font-size: large;
+    margin: 10x;
+}
+
+h1, h2 {
+    font-family: 'UnifrakturMaguntia', sans-serif;
+    color: #ff0000; 
+}
+
+/* Estilo para las imágenes */
+img {
+    display: inline-block; /* Hace que la imagen se comporte como un bloque en línea */
+    margin: 10px; /* Margen de separación entre imágenes */
+    max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Esquinas redondeadas (opcional) */
+    position: relative; /* Necesario para los pseudo-elementos */
+    color: #ff0000;
+}
+
+/* Estilos para el marco gótico */
+img::before, img::after {
+    content: ""; /* Necesario para los pseudo-elementos */
+    position: absolute;
+    top: -15px; /* Ajusta la posición según lo que necesites */
+    left: -15px; /* Ajusta la posición según lo que necesites */
+    right: -15px; /* Ajusta la posición según lo que necesites */
+    bottom: -15px; /* Ajusta la posición según lo que necesites */
+    border: 8px solid #FF4500; /* Marco de 8px de grosor en un color más claro */
+    border-radius: 15px; /* Esquinas redondeadas (opcional) */
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.7); /* Sombra más intensa en color naranja */
+    z-index: -1; /* Asegura que el marco esté detrás de la imagen */
+}
+
+/* Estilo para el texto del footer */
+footer {
+    text-align: center; /* Centra el texto del pie de página */
+    color: #ff0000; /* Color del texto del pie de página */
+    margin-top: 20px; /* Espacio por encima del pie de página */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* para centrar verticalmente */
+  }
+  
+  video {
+    width: 680px;  /* ancho personalizado */
+    height: 520px; /* altura personalizada */
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  video {
+    width: 600px;  
+    height: 500px;
+    border: 5px solid #ff0000; /* Color del borde */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 videos por fila */
+    gap: 20px; /* Espacio entre videos */
+    justify-content: center; /* Centra la cuadrícula */
+  }
+  footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;  
+  }
+
+  @media only screen and (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+      
+
+
+
+
+
+
+
